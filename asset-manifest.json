@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio_react/static/css/main.6d2947d6.css",
+    "main.js": "/portfolio_react/static/js/main.ace55e77.js",
+    "static/js/453.b06fd736.chunk.js": "/portfolio_react/static/js/453.b06fd736.chunk.js",
+    "static/media/2024_12_19_12_17_IMG_2092.png": "/portfolio_react/static/media/2024_12_19_12_17_IMG_2092.d1b2a23101c947e02f61.png",
+    "static/media/dream_fashion.png": "/portfolio_react/static/media/dream_fashion.eb740fc44d25860bfde2.png",
+    "static/media/mol_terrain.png": "/portfolio_react/static/media/mol_terrain.713835b9b68e4f8b037f.png",
+    "static/media/cv-image.jpg": "/portfolio_react/static/media/cv-image.aab07ff1984cb16d3660.jpg",
+    "static/media/cv_arfaoui.txt": "/portfolio_react/static/media/cv_arfaoui.3928fe4b926063bb6874.txt",
+    "static/media/Cosmetique.png": "/portfolio_react/static/media/Cosmetique.c2b57e6d4e7666d6389d.png",
+    "index.html": "/portfolio_react/index.html",
+    "main.6d2947d6.css.map": "/portfolio_react/static/css/main.6d2947d6.css.map",
+    "main.ace55e77.js.map": "/portfolio_react/static/js/main.ace55e77.js.map",
+    "453.b06fd736.chunk.js.map": "/portfolio_react/static/js/453.b06fd736.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d2947d6.css",
+    "static/js/main.ace55e77.js"
+  ]
+}
