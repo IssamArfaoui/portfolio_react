@@ -20,12 +20,11 @@ export default function Skills() {
             <Title title="Skills" />
             <Modal pop={pop} Close={closeModal} type={type} />
 
-            <div className="grid md:grid-cols-2 p-12 gap-14 ">
-
-                <div className="border border-black rounded-xl p-8 px-2 relative ">
+            {/* <div className="grid md:grid-cols-2 p-12 gap-14 ">
+                <div className="border border-black rounded-xl p-8 px-2 ">
                     <p className="text-3xl text-center mb-6">Front End</p>
 
-                    <div className="flex justify-items-center ">
+                    <div className=" bg-red-900 flex justify-items-center ">
                         <div className="grid grid-cols-2 mx-auto">
                             <div className="flex gap-2 py-2 px-8">
                                 <i class="fa-solid fa-circle-check text-xl mt-0.5"></i>   
@@ -116,7 +115,78 @@ export default function Skills() {
                         <i className="fa-solid fa-arrow-right group-hover:translate-x-2 transition duration-300"></i>
                     </div>
                 </div>
+            </div> */}
+            <div className="grid md:grid-cols-2 p-12 gap-14">
+            {/* FRONT */}
+            <div className="border border-black rounded-xl p-8 px-2 flex flex-col justify-between">
+                <div>
+                <p className="text-3xl text-center mb-6">Front End</p>
+
+                <div className="flex justify-center">
+                    <div className="grid grid-cols-2 gap-4">
+                        {[
+                            { name: "HTML", level: "Experienced" },
+                            { name: "CSS", level: "Experienced" },
+                            { name: "JavaScript", level: "Intermediate" },
+                            { name: "React Js", level: "Intermediate" },
+                            { name: "Bootstrap", level: "Experienced" },
+                            { name: "Tailwind", level: "Intermediate" },
+                        ].map((skill) => (
+                            <div key={skill.name} className="flex gap-2 py-2 px-4">
+                            <i className="fa-solid fa-circle-check text-xl mt-0.5"></i>
+                            <div>
+                                <span className="text-2xl">{skill.name}</span>
+                                <p className="text-gray-500">{skill.level}</p>
+                            </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                </div>
+
+                <div
+                onClick={() => openType("front")}
+                className="py-3 font-semibold flex items-center justify-center gap-2 cursor-pointer group"
+                >
+                <p className="text-lg">What I offer</p>
+                <i className="fa-solid fa-arrow-right group-hover:translate-x-2 transition duration-300"></i>
+                </div>
             </div>
+
+            {/* BACK */}
+            <div className="border border-black rounded-xl p-8 px-2 flex flex-col justify-between">
+                <div>
+                <p className="text-3xl text-center mb-6">Back End</p>
+
+                <div className="flex justify-center">
+                    <div className="grid grid-cols-2 gap-4">
+                        {[
+                            { name: "PHP", level: "Intermediate" },
+                            { name: "MySQL", level: "Intermediate" },
+                            { name: "Laravel", level: "Intermediate" },
+                        ].map((skill) => (
+                            <div key={skill.name} className="flex gap-2 py-2 px-4">
+                                <i className="fa-solid fa-circle-check text-xl mt-0.5"></i>
+                                <div>
+                                    <span className="text-2xl">{skill.name}</span>
+                                    <p className="text-gray-500">{skill.level}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                </div>
+
+                <div
+                onClick={() => openType("back")}
+                className="py-3 font-semibold flex items-center justify-center gap-2 cursor-pointer group"
+                >
+                <p className="text-lg">What I offer</p>
+                <i className="fa-solid fa-arrow-right group-hover:translate-x-2 transition duration-300"></i>
+                </div>
+            </div>
+            </div>
+
 
 
         </div>
